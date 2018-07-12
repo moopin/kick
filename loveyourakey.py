@@ -78,8 +78,8 @@ lineMID = line.getProfile().mid
 # kcMID = ke.getProfile().mid
 # bot1 = line.getProfile().mid
 RfuBot=[lineMID]
-Family=["u3930826c2f2dbf7b11a27efbcc37add",lineMID]
-admin=['u3930826c2f2dbf7b11a27efbcc37add',lineMID]
+Family=["uac94713fed3a310794d94a4c192815cb",lineMID]
+admin=['uac94713fed3a310794d94a4c192815cb',lineMID]
 RfuFamily = RfuBot + Family
 
 protectname = []
@@ -722,7 +722,7 @@ def lineBot(op):
                 elif text.lower() == 'ไลน์':
                     try:
                         arr = []
-                        owner = "u3930826c2f2dbf7b11a27efbcc37add"
+                        owner = "uac94713fed3a310794d94a4c192815cb"
                         creator = line.getContact(owner)
                         contact = line.getContact(lineMID)
                         grouplist = line.getGroupIdsJoined()
