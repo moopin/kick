@@ -451,9 +451,9 @@ def myhelp():
                   " ▦Day  💨 เช็ควันและเดือน▩"+ "  \n" + \
                   " ▤Spam  on +เลข+ข้อความ▥  ➾ "+ "  \n" + \
                   " ™cb  💨 ล้างบชดำ™"+ "  \n" + \
-                  " 又Rakey 💨 สั่งคลิ้กเข้า立"+ "  \n" + \
+                  " 又รวมฝูง 💨 สั่งคลิ้กเข้า立"+ "  \n" + \
                   " 🎣1-3 @  💨 สั่งคลิ้กเตะ🎿"+ "  \n" + \
-                  " 🀄Cleanse  💨 สั่งคลิ้กบิน🎴"+ "  \n" + \
+                  " 🀄ถล่ม3โลก  💨 สั่งคลิ้กบิน🎴"+ "  \n" + \
                   " 🃏เปิด กัน  💨 เปิดป้องกัน🎲"+ "  \n" + \
                   " 🎋ปิด กัน 💨 ปิดป้องกัน🎍"+ "  \n" + \
                   " 🎏กัน ยก 💨 เปิดยกเลิกป้องกัน🎐"+ "  \n" + \
@@ -702,12 +702,12 @@ def lineBot(op):
 #==============================================================================#
                 elif text.lower() == 'Sp':
                     start = time.time()
-                    line.sendMessage(to, " ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ ")
+                    line.sendMessage(to, " รอแป็บ ⚔️ Sęłf ßÿ.═हई۞ Ҩ௮ูചิ้এ ۞ईह═ ⚔️ ")
                     elapsed_time = time.time() - start
                     line.sendMessage(to,format(str(elapsed_time)))	
                 elif text.lower() == 'sp':
                     start = time.time()
-                    line.sendMessage(to, " ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ ")
+                    line.sendMessage(to, " รอแป็บ ⚔️ Sęłf ßÿ.═हई۞ Ҩ௮ูചิ้এ ۞ईह═ ⚔️ ")
                     elapsed_time = time.time() - start
                     line.sendMessage(to,format(str(elapsed_time)))						
                 elif text.lower() == 'รีบูส':
@@ -728,7 +728,7 @@ def lineBot(op):
                         grouplist = line.getGroupIdsJoined()
                         contactlist = line.getAllContactIds()
                         blockedlist = line.getBlockedContactIds()
-                        ret_ = " ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ "
+                        ret_ = " ⚔️ Sęłf ßÿ.⚔️ Sęłf ßÿ.═हई۞ Ҩ௮ูചิ้এ ۞ईह═ ⚔️ ⚔️ "
                         ret_ += "\nชื่อ ไลน์คุณ ⚔️ {}".format(contact.displayName)
                         ret_ += "\nรายการกลุ่ม ⚔️  {}".format(str(len(grouplist)))
                         ret_ += "\nรายการเพื่อน ⚔️  {}".format(str(len(contactlist)))
@@ -2020,7 +2020,7 @@ def lineBot(op):
 
                 elif "Cbcvoice " in msg.text:
                     bctxt = msg.text.replace("Cbcvoice ", "")
-                    bc = ("⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ \n`~|°• πနးຫຮี่のีধ ์×…")
+                    bc = ("⚔️ Sęłf ßÿ.• ⚔️ Sęłf ßÿ.═हई۞ Ҩ௮ูചิ้এ ۞ईह═ ⚔️ \n`~|°• Ҩ௮ูചิ้এ ×…")
                     cb = (bctxt + bc)
                     tts = gTTS(cb, lang='id', slow=False)
                     tts.save('tts.mp3')
@@ -2093,7 +2093,7 @@ def lineBot(op):
                         r = web.get("https://www.instagram.com/{}/?__a=1".format(search))
                         try:
                             data = json.loads(r.text)
-                            ret_ = " `~|°• πနးຫຮี่のีধ ์×… "
+                            ret_ = " `~|°• Ҩ௮ูചิ้এ ⚔️×… "
                             ret_ += "\n ชื่อ   {}".format(str(data["user"]["full_name"]))
                             ret_ += "\n ยูเซอเนม : {}".format(str(data["user"]["username"]))
                             ret_ += "\n ตัส  {}".format(str(data["user"]["biography"]))
@@ -2173,13 +2173,13 @@ def lineBot(op):
                     RfuCctv['point'][msg.to] = msg.id
                     RfuCctv['sidermem'][msg.to] = ""
                     RfuCctv['cyduk'][msg.to]=True
-                    line.sendMessage(msg.to,"  `~|°• πနးຫຮี่のีধ ์×…")
+                    line.sendMessage(msg.to,"  `~|°• Ҩ௮ูചิ้এ ×…")
                 elif msg.text in ["อ่านออโต้ปิด"]:
                     if msg.to in RfuCctv['point']:
                         RfuCctv['cyduk'][msg.to]=False
                         line.sendText(msg.to, RfuCctv['sidermem'][msg.to])
                     else:
-                        line.sendMessage(msg.to, " ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️")
+                        line.sendMessage(msg.to, " ⚔️ Sęłf ßÿ.═हई۞ Ҩ௮ูചิ้এ ۞ईह═ ⚔️")
 
 
 
@@ -2245,11 +2245,11 @@ def lineBot(op):
                             pass
 
 
-                elif msg.text in ["แท็กเปิด"]:
+                elif msg.text in ["เปิดแท็ก"]:
                     settings["detectMention"] = True
                     line.sendMessage(msg.to,"เปิดระบบข้อความแท็ก")
                 
-                elif msg.text in ["แท็กปิด"]:
+                elif msg.text in ["ปิดแท็ก"]:
                     settings["detectMention"] = False
                     line.sendMessage(msg.to,"ปิดระบบข้อความแท็ก")
 
@@ -2352,7 +2352,7 @@ def lineBot(op):
                         else:
                             line.sendMessage(msg.to, "Out Of Range!")
                             
-                elif 'ลบเชิญS' in msg.text.lower():
+                elif 'ลบเชิญ' in msg.text.lower():
                    if msg.toType == 2:
                        X = line.getGroup(msg.to)
                        if X.invitee is not None:
